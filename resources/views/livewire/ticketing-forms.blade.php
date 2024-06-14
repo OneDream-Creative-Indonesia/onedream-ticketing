@@ -29,7 +29,7 @@
 
                 @if ($transaction_type === 'qris')
                     <div class="flex justify-center">
-                       <img src="{{ asset('assets/img/IMG_6642.png') }}" alt="QRIS Image" class="w-1/2 h-auto">
+                       <img src="../../assets/img/IMG_6642.png" alt="QRIS Image" class="w-1/2 h-auto">
                     </div>
                 @endif
 
