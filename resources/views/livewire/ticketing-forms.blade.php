@@ -1,8 +1,8 @@
-<div class="flex flex-col items-center justify-center min-h-screen p-4 dark:bg-gray-900 text-gray-900 dark:text-white">
+<div class="flex flex-col items-center justify-center min-h-screen p-4 text-gray-900 dark:bg-gray-900 dark:text-white">
     @if (Session::has('message'))
-        <div id="testimonialPopup" class="fixed top-4 right-4 z-50 w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
+        <div id="testimonialPopup" class="fixed z-50 w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow top-4 right-4 dark:text-gray-400 dark:bg-gray-800" role="alert">
             <div class="flex items-center justify-between">
-                <div class="flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg flex items-center justify-center dark:bg-green-800 dark:text-green-200">
+                <div class="flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                     </svg>
@@ -19,7 +19,7 @@
     @endif
 
     <div class="w-full max-w-3xl p-8 bg-white rounded-lg shadow dark:bg-gray-800">
-        <h2 class="md:text-2xl sm:text-xl font-bold mb-4 text-center">
+        <h2 class="mb-4 font-bold text-center md:text-2xl sm:text-xl">
             Photobooth by One Dream
         </h2>
 
@@ -33,7 +33,7 @@
                     </div>
                 @endif
 
-                <div class="flex flex-wrap items-center gap-4 justify-start">
+                <div class="flex flex-wrap items-center justify-start gap-4">
                     <x-filament::button type="submit">
                         {{ __('Submit') }}
                     </x-filament::button>
