@@ -34,7 +34,7 @@ class TicketingForms extends Component implements HasForms
             TextInput::make('kelas')
                 ->required(),
             TextInput::make('telpon')
-                ->label('Nomor Telfon')
+                ->label('Nomor Handphone')
                 ->numeric()
                 ->placeholder('08xx-xxxx-xxxx')
                 ->required(),
