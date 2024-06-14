@@ -13,5 +13,7 @@ class Ticketing extends Model
         'kelas',
         'telpon',
         'transaction_type',
+        'no_photo'
      ];
+
 }

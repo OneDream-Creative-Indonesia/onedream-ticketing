@@ -34,7 +34,7 @@
                 @endif
 
                 <div class="flex flex-wrap items-center justify-start gap-4">
-                    <x-filament::button type="submit">
+                    <x-filament::button type="submit" style="background-color: #01013D;">
                         {{ __('Submit') }}
                     </x-filament::button>
                 </div>
