@@ -14,3 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', \App\Livewire\TicketingForms::class)->name('ticketing-forms');
+Route::get('/storage-link',function(){
+    $targetFolder = storage_path('app/public');
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    symlink($targetFolder,$linkFolder);
+});
