@@ -53,6 +53,19 @@
             </nav>
             <!-- End Navigation -->
         </header>
+        <div class="text-center"  style="background-color: #01013D;">
+            <!-- Fixed BG -->
+            <div class="fixed-bg" style="background-image: url(../../assets/img/shape/bg-4.png);"></div>
+            <!-- Fixed BG -->
+            <div class="container mx-auto">
+                <div class="py-20 lg:flex lg:justify-center lg:items-center">
+                    <div class="lg:w-8/12">
+                        <h1 class="mb-4 text-4xl font-bold text-white">Photobooth by One Dream</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{ $slot }}
 
         @filamentScripts
