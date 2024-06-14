@@ -13,8 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/ticketing/forms', \App\Livewire\TicketingForms::class)->name('ticketing-forms');
-Route::post('/ticketing/forms', \App\Livewire\TicketingForms::class)->name('ticketing-forms');
+Route::get('/', \App\Livewire\TicketingForms::class)->name('ticketing-forms');
