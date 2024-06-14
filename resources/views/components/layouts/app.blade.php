@@ -13,20 +13,20 @@
                 display: none !important;
             }
         </style>
-
         @filamentStyles
         @vite('resources/css/app.css')
+
     </head>
 
     <body class="antialiased">
         <header id="home">
             <!-- Start Navigation -->
-            <nav class="p-6 text-white shadow-lg" style="background-color: #01013D">
+            <nav class="p-6 bg-white shadow-lg" style="color: #01013D;font-weight: bold">
                 <div class="container flex items-center justify-between px-4 py-2 mx-auto">
                     <!-- Start Header Navigation -->
                     <div class="flex items-center">
                         <a class="text-xl font-bold" href="https://onedream.id">
-                            <img src="../../assets/img/logo one dream putih.svg" class="h-10" alt="Logo">
+                            <img src="../../assets/img/logo one dream.svg" class="h-10" alt="Logo">
                         </a>
                     </div>
                     <!-- End Header Navigation -->
@@ -53,6 +53,19 @@
             </nav>
             <!-- End Navigation -->
         </header>
+        <div class="text-center bg-gradient-to-tr" style="background-color: #01013D">
+            <!-- Fixed BG -->
+            <div class="fixed-bg" style="background-image: url(assets/img/shape/bg-4.png);"></div>
+            <!-- Fixed BG -->
+            <div class="container mx-auto">
+                <div class="py-20 lg:flex lg:justify-center lg:items-center">
+                    <div class="lg:w-8/12">
+                        <h1 class="mb-4 text-4xl font-bold text-white">Photobooth by One Dream</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{ $slot }}
 
         @filamentScripts

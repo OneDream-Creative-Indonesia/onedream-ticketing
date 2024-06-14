@@ -18,12 +18,12 @@
         </div>
     @endif
 
-    <div class="w-full max-w-3xl p-8 bg-white rounded-lg shadow dark:bg-gray-800">
-        <h2 class="mb-4 font-bold text-center md:text-2xl sm:text-xl">
-            Photobooth by One Dream
-        </h2>
 
-        <div class="w-full p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+        <div class="w-full max-w-3xl p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+             <h2 class="mb-4 font-bold text-center md:text-2xl sm:text-xl">
+                Please Insert Your Data
+            </h2>
+
             <form wire:submit.prevent="submit" class="space-y-6">
                 {{ $this->form }}
 
@@ -40,7 +40,6 @@
                 </div>
             </form>
         </div>
-    </div>
 </div>
 
 <script>
