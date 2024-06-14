@@ -26,7 +26,7 @@
                     <!-- Start Header Navigation -->
                     <div class="flex items-center">
                         <a class="text-xl font-bold" href="https://onedream.id">
-                            <img src="../../assets/img/logo one dream.svg" class="h-10" alt="Logo">
+                            <img src="../../assets/img/logo one dream.svg" class="h-10" alt="Logo ">
                         </a>
                     </div>
                     <!-- End Header Navigation -->
