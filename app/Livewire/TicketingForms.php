@@ -17,7 +17,7 @@ class TicketingForms extends Component implements HasForms
     use InteractsWithForms;
 
     public $nama;
-    public $kelas;
+    public $jumlah;
     public $telpon;
     public $transaction_type;
 
@@ -31,8 +31,9 @@ class TicketingForms extends Component implements HasForms
         return $form->schema([
             TextInput::make('nama')
                 ->required(),
-            TextInput::make('kelas')
-                ->required(),
+            TextInput::make('jumlah')
+                ->required()
+                ->label('Jumlah Orang'),
             TextInput::make('telpon')
                 ->label('Nomor Handphone')
                 ->numeric()
@@ -55,7 +56,7 @@ class TicketingForms extends Component implements HasForms
     {
         $validate = $this->validate([
             'nama' => 'required|string|max:255',
-            'kelas' => 'required|string|max:255',
+            'jumlah' => 'required|integer|min:1',
             'telpon' => 'required|string|max:15',
             'transaction_type' => 'required|string|in:tunai,qris',
         ]);
@@ -70,7 +71,7 @@ class TicketingForms extends Component implements HasForms
     public function resetForm()
     {
         $this->nama = '';
-        $this->kelas = '';
+        $this->jumlah = '';
         $this->telpon = '';
         $this->transaction_type = '';
     }
